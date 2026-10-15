@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #60a5fa, #a5f3fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px #00000020;
+}
+
+h1 {
+    color: #1d4ed8;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+#weatherCard {
+    margin-top: 20px;
+    padding: 20px;
+    background: #eff6ff;
+    border-radius: 12px;
+}
+
+#weatherIcon {
+    font-size: 50px;
+}
+
+#temperature {
+    font-size: 32px;
+    color: #1d4ed8;
+}
+
+#message {
+    color: #b91c1c;
+}
+
+@media (max-width: 450px) {
+    form {
+        flex-direction: column;
+    }
+}
